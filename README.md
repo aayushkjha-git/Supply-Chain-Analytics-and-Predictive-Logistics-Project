@@ -14,9 +14,9 @@ This project is a full-stack data architecture designed to optimize warehouse in
 
 ## 🚀 Key Business Outcomes
 
-* **Inventory Stratification (K-Means):** Segmented 180,000+ product categories by historical volume and demand volatility. This allows the warehouse floor to dynamically assign Safety Stock for high-volatility items and Just-In-Time (JIT) strategies for stable cash cows.
+* **Inventory Stratification (K-Means):** Segmented approximately 50 product categories based on historical order volume and demand volatility. The resulting clusters support differentiated inventory strategy decisions for products with different demand characteristics.
 * **Late Delivery Prediction (Random Forest):** Engineered a predictive classification model to flag at-risk shipments before they leave the warehouse.
-* **Risk-Tolerant Decision Tuning:** Adjusted the algorithmic decision threshold down to 40%. This business-logic tradeoff intentionally absorbed ~700 minor false-positive shipping expedites to successfully catch and prevent over 600 highly damaging actual late deliveries.
+* **Risk-Tolerant Decision Tuning:** Applied a 40% late-risk probability threshold to prioritize potentially at-risk shipments for operational review, trading a higher number of alerts for greater sensitivity to late-delivery risk.
 * **Operational Control Tower:** Built a Power BI dashboard connecting live historical sales data directly to ML probability scores, providing the warehouse floor with a daily, prioritized hit-list of at-risk orders.
 
 ## 📊 Executive Dashboard
